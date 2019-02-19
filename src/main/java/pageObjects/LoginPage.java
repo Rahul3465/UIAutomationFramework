@@ -19,7 +19,7 @@ public class LoginPage
 	@FindBy(css = "input[type='password']")
 	private WebElement password;
 	
-	@FindBy(css = "input[type='submi']")
+	@FindBy(css = "input[type='submit']")
 	private WebElement login;
 	
 	public LoginPage(WebDriver driver)
