@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="19118" started-at="2019-02-16T15:33:42Z" finished-at="2019-02-16T15:34:02Z">
+  <suite name="Default suite" duration-ms="16790" started-at="2019-02-19T12:11:15Z" finished-at="2019-02-19T12:11:32Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="19118" started-at="2019-02-16T15:33:42Z" finished-at="2019-02-16T15:34:02Z">
+    <test name="Default test" duration-ms="16790" started-at="2019-02-19T12:11:15Z" finished-at="2019-02-19T12:11:32Z">
       <class name="Academy.ValidateTitle">
-        <test-method status="PASS" signature="initialize()[pri:0, instance:Academy.ValidateTitle@595b007d]" name="initialize" is-config="true" duration-ms="18794" started-at="2019-02-16T21:03:42Z" finished-at="2019-02-16T21:04:01Z">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:Academy.ValidateTitle@f6efaab]" name="initialize" is-config="true" duration-ms="16501" started-at="2019-02-19T17:41:15Z" finished-at="2019-02-19T17:41:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method status="PASS" signature="pageNavigation()[pri:0, instance:Academy.ValidateTitle@595b007d]" name="pageNavigation" duration-ms="96" started-at="2019-02-16T21:04:01Z" finished-at="2019-02-16T21:04:01Z">
+        <test-method status="PASS" signature="pageNavigation()[pri:0, instance:Academy.ValidateTitle@f6efaab]" name="pageNavigation" duration-ms="109" started-at="2019-02-19T17:41:32Z" finished-at="2019-02-19T17:41:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pageNavigation -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:Academy.ValidateTitle@595b007d]" name="teardown" is-config="true" duration-ms="212" started-at="2019-02-16T21:04:01Z" finished-at="2019-02-16T21:04:02Z">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:Academy.ValidateTitle@f6efaab]" name="teardown" is-config="true" duration-ms="161" started-at="2019-02-19T17:41:32Z" finished-at="2019-02-19T17:41:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->

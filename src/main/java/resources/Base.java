@@ -29,7 +29,7 @@ public class Base
 {
 	public static WebDriver driver;
 	public static Properties prop;
-	public final String propertyFilePath = "/Users/rahul/Documents/workspace_sample/E2EProject/src/main/java/resources/data.properties";
+	private final String propertyFilePath = "properties/data.properties";
 	
 	public Base(){
 		BufferedReader reader;
