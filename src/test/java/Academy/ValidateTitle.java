@@ -30,7 +30,7 @@ public class ValidateTitle extends Base
 	{
 		LandingPage l = new LandingPage(driver);
 		System.out.println(l.getTitle());
-		Assert.assertEquals(l.getTitle(), "FEATURED COURSES");
+		Assert.assertEquals(l.getTitle(), "Google");
 		log.info("Successfully validated text message");
 	}
 
