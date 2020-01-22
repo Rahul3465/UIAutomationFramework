@@ -6,11 +6,11 @@
 		<listener class-name="resources.ExtentReporterNG" />
 	</listeners>
 
-	<test name="Validating User Login">
+	<!-- <test name="Validating User Login">
 		<classes>
 			<class name="Academy.HomePage" />
 		</classes>
-	</test>
+	</test> -->
 	<test name="Validating title in the Page">
 		<classes>
 			<class name="Academy.ValidateTitle" />
