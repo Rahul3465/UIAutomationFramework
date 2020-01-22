@@ -16,9 +16,13 @@ public class LandingPage
 	@FindBy(css = "a[href*='sign_in']")
 	private WebElement signin;
 
-	@FindBy(css = ".text-center>h2")
-	private WebElement title;
+	/*@FindBy(css = ".text-center>h2")
+	private WebElement title;*/
 
+	@FindBy(id = "//img[@id='hplogo']")
+	private WebElement title;
+	
+	
 	@FindBy(css = ".nav.navbar-nav.navbar-right>li>a")
 	private WebElement navBar;
 
