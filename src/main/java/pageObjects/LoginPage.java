@@ -12,6 +12,11 @@ public class LoginPage
 {
 	public WebDriver driver;
 
+	public LoginPage(WebDriver driver)
+	{
+		this.driver=driver;
+		PageFactory.initElements(driver, this);
+	}
 
 	@FindBy(css = "input[id='user_email']")
 	private WebElement email;
@@ -22,11 +27,7 @@ public class LoginPage
 	@FindBy(css = "input[type='submit']")
 	private WebElement login;
 	
-	public LoginPage(WebDriver driver)
-	{
-		this.driver=driver;
-		PageFactory.initElements(driver, this);
-	}
+	
 
 	public void getEmail(String sheet, String uniqueName)
 	{
@@ -38,7 +39,7 @@ public class LoginPage
 		catch(Exception e){}
 
 		String un = record[1].getContents().trim();
-		String pwd = record[1].getContents().trim();	
+		String pwd = record[2].getContents().trim();	
 		email.sendKeys(un);
 		password.sendKeys(pwd);
 		login.click();

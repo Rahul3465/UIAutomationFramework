@@ -19,7 +19,7 @@ public class LandingPage
 	/*@FindBy(css = ".text-center>h2")
 	private WebElement title;*/
 
-	@FindBy(id = "//img[@id='hplogo']")
+	@FindBy(id = "hplogo")
 	private WebElement title;
 	
 	
