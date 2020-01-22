@@ -58,7 +58,7 @@ public class Base
 
 		if(browserName.equals("chrome"))
 		{
-			System.setProperty("webdriver.chrome.driver", "./chromedriver_mac_2.43");
+			System.setProperty("webdriver.chrome.driver", "./chromedriver.exe");
 			driver = new ChromeDriver();
 		}
 
