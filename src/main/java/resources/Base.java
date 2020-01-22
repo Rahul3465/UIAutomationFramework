@@ -30,7 +30,7 @@ public class Base
 	public static WebDriver driver;
 	public static Properties prop;
 	private final String propertyFilePath = "properties/data.properties";
-	
+
 	public Base(){
 		BufferedReader reader;
 		try {
@@ -72,11 +72,16 @@ public class Base
 		{
 			driver = new SafariDriver();
 		} 
-		driver.manage().window().fullscreen();
+		try{
+			driver.manage().window().maximize();
+		}catch(Exception e)
+		{
+			driver.manage().window().fullscreen();
+		}
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		return driver;
 	}
-	
+
 	public void getScreenshot(String result) throws Exception
 	{
 		String dateName = new SimpleDateFormat("dd-MM-yyyy_hh_mm_ss").format(new Date());
@@ -85,8 +90,8 @@ public class Base
 		File dest = new File("/Users/rahul/Documents/workspace_sample/E2EProject/failure_screenshots/"+ result +dateName+".png");
 		FileUtils.copyFile(src, dest);
 	}
-	
-	
+
+
 	public static Cell[] readExcel(String sheetName, String uniqueValue) throws BiffException, IOException,Exception
 	{
 		Workbook wrk1;
