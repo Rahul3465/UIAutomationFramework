@@ -29,8 +29,8 @@ public class ValidateTitle extends Base
 	public void pageNavigation() throws Exception
 	{
 		LandingPage l = new LandingPage(driver);
-		System.out.println(l.getTitle());
-		Assert.assertEquals(l.getTitle(), "Google");
+		System.out.println(l.getLogo()); 
+		Assert.assertEquals(l.getLogo(), "Gmail");
 		log.info("Successfully validated text message");
 	}
 
