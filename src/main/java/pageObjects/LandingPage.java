@@ -8,7 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 public class LandingPage
 {
 	public WebDriver driver;
-
+	public String log;
 	//	By signin = By.cssSelector("a[href*='sign_in']");
 	//	By title  = By.cssSelector(".text-center>h2");
 	//	By navBar  = By.cssSelector(".nav.navbar-nav.navbar-right>li>a");
@@ -19,8 +19,8 @@ public class LandingPage
 	/*@FindBy(css = ".text-center>h2")
 	private WebElement title;*/
 
-	@FindBy(id = "hplogo")
-	private WebElement title;
+	@FindBy(className = "gb_g")
+	private WebElement logo;
 	
 	
 	@FindBy(css = ".nav.navbar-nav.navbar-right>li>a")
@@ -53,9 +53,9 @@ public class LandingPage
 		signin.click();
 	}
 
-	public String getTitle()
+	public String getLogo()
 	{
-		String title1 = title.getText();
-		return title1;
+		String log = logo.getText();
+		return log;
 	}
 }
