@@ -19,6 +19,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.safari.SafariDriver;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
 import jxl.Cell;
 import jxl.LabelCell;
 import jxl.Sheet;
@@ -58,13 +59,15 @@ public class Base
 
 		if(browserName.equals("chrome"))
 		{
-			System.setProperty("webdriver.chrome.driver", "./chromedriver.exe");
+			//System.setProperty("webdriver.chrome.driver", "./chromedriver.exe");
+			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver();
 		}
 
 		else if (browserName.equals("firefox"))
 		{
-			System.setProperty("webdriver.gecko.driver", "./geckodriver_mac_0.23.0");
+			WebDriverManager.firefoxdriver().setup();
+			//System.setProperty("webdriver.gecko.driver", "./geckodriver_mac_0.23.0");
 			driver = new FirefoxDriver();
 		}
 
